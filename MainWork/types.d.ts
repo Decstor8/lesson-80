@@ -4,7 +4,13 @@ export interface Category {
     description?: string;
 }
 
+export interface Place {
+    id: number;
+    name: string;
+    description?: string;
+  }
+
 export interface ErrorResponse {
     message: string;
-    error?: any;
+    error?: string | unknown;
 }
