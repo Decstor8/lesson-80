@@ -10,6 +10,15 @@ export interface Place {
     description?: string;
   }
 
+export  interface Item {
+    id: number;
+    categoryId: number;
+    placeId: number;
+    name: string;
+    description?: string;
+    photo?: string;
+  }
+
 export interface ErrorResponse {
     message: string;
     error?: string | unknown;

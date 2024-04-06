@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 import { RowDataPacket, FieldPacket, ResultSetHeader } from 'mysql2';
 import { Place, ErrorResponse } from '../types';
-import db from '../database';
+import db from './database';
 
 const placesRouter = Router();
 
